@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Designer - Design Your Career with Confidence!</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%234f46e5;stop-opacity:1' /><stop offset='100%25' style='stop-color:%237c3aed;stop-opacity:1' /></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23grad)'/><text x='50' y='35' font-family='Arial,sans-serif' font-size='24' font-weight='bold' fill='white' text-anchor='middle'>CD</text><path d='M25 65 L40 75 L75 45' stroke='white' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%234f46e5;stop-opacity:1' /><stop offset='100%25' style='stop-color:%237c3aed;stop-opacity:1' /></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23grad)'/><text x='50' y='35' font-family='Arial,sans-serif' font-size='24' font-weight='bold' fill='white' text-anchor='middle'>CD</text><path d='M25 65 L40 75 L75 45' stroke='white' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <div class="logo-main">
+                        <div class="logo-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="logo-badge">
+                            <span>CD</span>
+                        </div>
+                    </div>
+                    <div class="logo-text">
+                        <h2 class="brand-name">
+                            <span class="brand-career">Career</span>
+                            <span class="brand-designer">Designer</span>
+                        </h2>
+                        <span class="brand-tagline">Shape Your Future</span>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#hero" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link">
+                        <i class="fas fa-book-open"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">
+                        <i class="fas fa-comments"></i>
+                        <span>Testimonials</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-cta">
+                <button class="btn-nav-cta">Get Started</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-elements">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-trophy"></i>
+                    <span>Premium Training Institute</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-highlight">Design Your Career</span>
+                    <span class="title-main">with Confidence!</span>
+                </h1>
+                <p class="hero-subtitle">Transform your personality, master English speaking, and ace your interviews with our expert training programs. Join 500+ successful professionals.</p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Expert Trainers</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Proven Methods</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Job Guarantee</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('courses')">
+                        <i class="fas fa-play"></i>
+                        <span>Explore Courses</span>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-phone"></i>
+                        <span>Contact Us</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-visual">
+                    <div class="hero-main-graphic">
+                        <div class="graphic-element element-1">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="graphic-element element-2">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="graphic-element element-3">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="graphic-element element-4">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="central-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="floating-icon icon-1">💼</div>
+                        <div class="floating-icon icon-2">🎯</div>
+                        <div class="floating-icon icon-3">📈</div>
+                        <div class="floating-icon icon-4">🏆</div>
+                        <div class="floating-icon icon-5">💪</div>
+                        <div class="floating-icon icon-6">🎤</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <span class="stat-number" data-target="500">0</span>
+                <span class="stat-label">Students Trained</span>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <span class="stat-number" data-target="5">0</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <span class="stat-number" data-target="95">0</span>
+                <span class="stat-label">Success Rate %</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Career Designer</h2>
+                <p class="section-subtitle">Empowering individuals to achieve their professional dreams</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>At Career Designer, we believe that every individual has the potential to achieve greatness. Our mission is to provide comprehensive training and development programs that transform careers and build confident professionals.</p>
+                    
+                    <h3>Our Values</h3>
+                    <ul class="values-list">
+                        <li><i class="fas fa-check"></i> Excellence in training and mentorship</li>
+                        <li><i class="fas fa-check"></i> Personalized approach to learning</li>
+                        <li><i class="fas fa-check"></i> Building lasting confidence and skills</li>
+                        <li><i class="fas fa-check"></i> Commitment to student success</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Expert Trainers</h4>
+                        <p>Industry professionals with years of experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Courses</h2>
+                <p class="section-subtitle">Choose from our comprehensive range of professional development programs</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Spoken English</h3>
+                    <p class="course-level">Beginner to Advanced</p>
+                    <p class="course-description">Master the art of English communication with our comprehensive speaking program. From basic conversations to advanced presentations.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Grammar & Vocabulary Building</li>
+                        <li><i class="fas fa-check"></i> Pronunciation & Accent Training</li>
+                        <li><i class="fas fa-check"></i> Group Discussions & Debates</li>
+                        <li><i class="fas fa-check"></i> Public Speaking Skills</li>
+                    </ul>
+                    <button class="btn btn-course">Enroll Now</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Personality Development</h3>
+                    <p class="course-level">Complete Transformation</p>
+                    <p class="course-description">Develop a magnetic personality that opens doors to new opportunities and success in both personal and professional life.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Body Language & Posture</li>
+                        <li><i class="fas fa-check"></i> Communication Skills</li>
+                        <li><i class="fas fa-check"></i> Leadership Qualities</li>
+                        <li><i class="fas fa-check"></i> Emotional Intelligence</li>
+                    </ul>
+                    <button class="btn btn-course">Enroll Now</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Confidence Building</h3>
+                    <p class="course-level">Inner Strength Development</p>
+                    <p class="course-description">Build unshakeable confidence and self-esteem to face any challenge with courage and determination.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Self-Awareness Techniques</li>
+                        <li><i class="fas fa-check"></i> Overcoming Fear & Anxiety</li>
+                        <li><i class="fas fa-check"></i> Positive Mindset Training</li>
+                        <li><i class="fas fa-check"></i> Goal Setting & Achievement</li>
+                    </ul>
+                    <button class="btn btn-course">Enroll Now</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Interview Preparation</h3>
+                    <p class="course-level">Job Success Guarantee</p>
+                    <p class="course-description">Ace your interviews with our comprehensive preparation program covering all aspects of the interview process.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Mock Interview Sessions</li>
+                        <li><i class="fas fa-check"></i> Resume Building</li>
+                        <li><i class="fas fa-check"></i> HR Round Preparation</li>
+                        <li><i class="fas fa-check"></i> Technical Interview Skills</li>
+                    </ul>
+                    <button class="btn btn-course">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Students Say</h2>
+                <p class="section-subtitle">Success stories from our amazing students</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Career Designer completely transformed my speaking skills. I went from being afraid to speak in public to confidently presenting in board meetings. The trainers are exceptional!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <span>Marketing Executive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The interview preparation course was a game-changer. I cracked my dream job interview on the first attempt. The mock sessions gave me the confidence I needed."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Rahul Verma</h4>
+                            <span>Software Engineer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The personality development program helped me become a better version of myself. My colleagues and friends have noticed the positive change in my behavior and communication."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Anjali Gupta</h4>
+                            <span>HR Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your transformation journey?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p>186-B, Opp. Gulmohar Marriage Garden, Indra Vihar Colony, Maine, Airport Road, Bhopal, Madhya Pradesh 462030</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+91 9425680097</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>info@careerdesigner.com</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Google Map -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.077891234567!2d77.3554921!3d23.2831838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c678bdfe492f1%3A0x93c6db192e7c4165!2sCareer%20Designer%20%7C%20Spoken%20English%20Class%20In%20Bhopal%20%7C%20Personality%20Development%20%7C%20Confidence%20Building%20%7C%20Interview%20Preparation!5e0!3m2!1sen!2sin!4v1691234567890" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="inquiryForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Career Designer</h3>
+                    <p>Empowering individuals to design their careers with confidence and achieve professional excellence.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 186-B, Opp. Gulmohar Marriage Garden, Indra Vihar Colony, Maine, Airport Road, Bhopal, MP 462030</p>
+                        <p><i class="fas fa-phone"></i> +91 9425680097</p>
+                        <p><i class="fas fa-envelope"></i> info@careerdesigner.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Career Designer. All rights reserved. | Designed with ❤️ for your success</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <button class="fab-btn enroll-btn" onclick="scrollToSection('courses')" title="Enroll Now">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Enroll Now</span>
+        </button>
+        <button class="fab-btn contact-btn" onclick="scrollToSection('contact')" title="Contact Us">
+            <i class="fas fa-phone"></i>
+            <span>Contact Us</span>
+        </button>
+    </div>
+
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-btn">
+        <a href="https://wa.me/9425680097" target="_blank" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
