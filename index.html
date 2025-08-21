@@ -430,6 +430,48 @@
         </div>
     </section>
 
+    <!-- Our Classes in Action Section -->
+    <section id="classes-action" class="classes-action-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Classes in Action</h2>
+                <p class="section-subtitle">Experience Learning with Us!</p>
+            </div>
+            <div class="carousel-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="photos">Photos</button>
+                <button class="filter-btn" data-filter="videos">Videos</button>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <div class="carousel-slide" data-type="photo">
+                        <img src="photo1.jpg" alt="Class Photo 1" class="carousel-img" />
+                    </div>
+                    <div class="carousel-slide" data-type="photo">
+                        <img src="photo2.jpg" alt="Class Photo 2" class="carousel-img" />
+                    </div>
+                    <div class="carousel-slide" data-type="photo">
+                        <img src="photo3.jpg" alt="Class Photo 3" class="carousel-img" />
+                    </div>
+                    <div class="carousel-slide" data-type="video">
+                        <video class="carousel-video" controls poster="photo1.jpg">
+                            <source src="video1.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <button class="carousel-arrow left" aria-label="Previous Slide">&#10094;</button>
+                <button class="carousel-arrow right" aria-label="Next Slide">&#10095;</button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+        <!-- Lightbox Modal -->
+        <div class="lightbox-modal" id="lightbox-modal">
+            <span class="lightbox-close" id="lightbox-close">&times;</span>
+            <div class="lightbox-content" id="lightbox-content"></div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
