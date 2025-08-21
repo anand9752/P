@@ -830,3 +830,19 @@ if (!document.querySelector('#loading-styles')) {
     styleSheet.textContent = loadingStyles;
     document.head.appendChild(styleSheet);
 }
+
+// Fade-in animation for founder section
+window.addEventListener('DOMContentLoaded', function() {
+    var fadeSection = document.querySelector('.fade-in-on-scroll');
+    if (!fadeSection) return;
+    function onScrollFadeIn() {
+        var rect = fadeSection.getBoundingClientRect();
+        var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        if (rect.top < windowHeight - 60) {
+            fadeSection.classList.add('visible');
+            window.removeEventListener('scroll', onScrollFadeIn);
+        }
+    }
+    window.addEventListener('scroll', onScrollFadeIn);
+    onScrollFadeIn(); // Initial check in case already in view
+});
